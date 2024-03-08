@@ -1,0 +1,95 @@
+@import '../../responsive.scss';
+
+* {
+    font-family: sans-serif;
+}
+
+.homepage {
+    display: flex;
+    height: 100%;
+    
+
+
+    .textContainer {
+
+
+
+        flex: 3;
+        height: 100%;
+        
+        .wrapper {
+            padding-right: 100px;
+            width: 100%;
+            margin: auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            justify-content: center;
+            // align-items: center;
+
+            @include md {
+                padding: 0;
+            }
+            
+            @include sm {
+                justify-content: flex-start;
+            }
+            
+            .title {
+                font-size: 4rem;
+
+                @include lg {
+                    font-size: 48px;
+                }
+            }
+
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+
+            @include sm {
+                display: none;
+            }
+
+            h1 {
+                font-size: 36px;
+
+                @include lg {
+                    font-size: 32px;
+                }
+            }
+
+            h2 {
+                font-size: 20px;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .imgContainer {
+
+        @include md {
+            display: none;
+        }
+
+        flex: 2;
+        background-color:  #fcf5f3;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        img {
+            position: relative;
+            right: 10%;
+            width: 115%;
+
+            @include lg {
+                width: 105%;
+            }
+        }
+    }
+}
