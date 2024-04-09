@@ -59,6 +59,17 @@
           border-radius: 50%;
           object-fit: cover;
         }
+
+        button {
+          padding: 10px 20px;
+          width: 100px;
+          background-color: teal;
+          color: white;
+          border-radius: 5px;
+          cursor: pointer;
+          font-weight: bold;
+          border: none;
+        }
       }
     }
   }
